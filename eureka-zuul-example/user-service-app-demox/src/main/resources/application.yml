@@ -1,0 +1,12 @@
+server:
+  port: 9098
+
+# http://192.168.1.27:9090/user-service-eureka-instance-name/user
+eureka:
+  instance:
+    name: user-service-eureka-instance-name
+
+# http://192.168.1.27:9090/user-service/user
+spring:
+  application:
+    name: user-service

@@ -1,0 +1,12 @@
+server:
+  port: 9099
+
+# http://192.168.1.27:9090/book-service-eureka-instance-name/book
+eureka:
+  instance:
+    name: book-service-eureka-instance-name
+
+# http://192.168.1.27:9090/book-service/book
+spring:
+  application:
+    name: book-service

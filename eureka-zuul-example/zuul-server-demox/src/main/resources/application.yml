@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+zuul:
+  routes:
+    user-service-eureka-instance-name:
+      path: /user-service-eureka-instance-name/**
+      serviceId: USER-SERVICE
+    book-service-eureka-instance-name:
+      path: /book-service-eureka-instance-name/**
+      serviceId: BOOK-SERVICE
+
+spring:
+  application:
+    name: zuul-server
