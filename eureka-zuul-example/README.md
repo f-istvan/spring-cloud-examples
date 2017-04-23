@@ -1,10 +1,47 @@
-http://localhost:8761/
+#### Description
 
-http://localhost:9098/user
-http://localhost:9099/book
+Netflix Eureka and Zuul example with two services calling each other.
 
-http://192.168.1.27:9090/book-service/book
-http://192.168.1.27:9090/user-service/user
+#### Used Services and technologies:
 
-http://192.168.1.27:9090/user-service-eureka-instance-name/user
-http://192.168.1.27:9090/book-service-eureka-instance-name/book
+* Spring Cloud Netflix Eureka
+* Spring Cloud Netflix Zuul
+* Spring Boot
+* Spring RestTemplate (user-service calls book-service using zuul with RestTemplate) 
+
+
+#### To start this example run
+
+```
+$ cd eureka-server-demox
+$ mvn spring-boot:run
+
+$ cd zuul-server-demox
+$ mvn spring-boot:run
+
+$ cd book-service-app-demox
+$ mvn spring-boot:run
+
+$ cd user-service-app-demox
+$ mvn spring-boot:run
+```
+
+#### Available urls:
+
+##### Eureka server:
+
+* http://localhost:8761/
+
+##### Direct urls to the services:
+
+* http://localhost:9098/user
+* http://localhost:9099/book
+
+##### Urls using zuul API gateway:
+ 
+* http://192.168.1.27:9090/book-service/book
+* http://192.168.1.27:9090/user-service/user
+
+
+* http://192.168.1.27:9090/user-service-eureka-instance-name/user
+* http://192.168.1.27:9090/book-service-eureka-instance-name/book

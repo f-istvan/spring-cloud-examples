@@ -1,7 +1,28 @@
-https://github.com/f-istvan/spring-cloud-examples
+#### Description
 
-http://localhost:8080/library/books
+Netflix Zuul example with one service (book-app).
 
-/zuul-proxy-example/zuul-gateway $ mvn spring-boot:run
+#### Used Services and technologies:
 
-/zuul-proxy-example/book-app $ mvn spring-boot:run
+* Spring Cloud Netflix Zuul
+* Spring Boot
+
+#### To start this example run
+
+```
+$ cd zuul-gateway
+$ mvn spring-boot:run
+
+$ cd book-app
+$ mvn spring-boot:run
+```
+
+#### Available urls:
+
+##### Direct urls to the service:
+
+* http://localhost:7000/books
+
+##### Urls using zuul API gateway:
+
+* http://localhost:8080/library/books

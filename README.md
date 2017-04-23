@@ -1,0 +1,1 @@
+This repository contains Spring Cloud examples. Every folder contains a stand alone example with one or more subdirectory each containing a service. For more details see README files of each dirrectory.
