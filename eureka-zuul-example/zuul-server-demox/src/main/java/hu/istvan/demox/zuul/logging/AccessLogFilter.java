@@ -1,4 +1,4 @@
-package hu.istvan.zuul.demox.logging;
+package hu.istvan.demox.zuul.logging;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

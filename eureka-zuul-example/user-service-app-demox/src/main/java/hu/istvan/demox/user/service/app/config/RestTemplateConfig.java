@@ -1,4 +1,4 @@
-package hu.istvan.user.service.app.demox.config;
+package hu.istvan.demox.user.service.app.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

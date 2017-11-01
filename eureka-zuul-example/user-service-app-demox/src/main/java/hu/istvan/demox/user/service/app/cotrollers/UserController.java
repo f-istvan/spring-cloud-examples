@@ -1,4 +1,4 @@
-package hu.istvan.user.service.app.demox.cotrollers;
+package hu.istvan.demox.user.service.app.cotrollers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

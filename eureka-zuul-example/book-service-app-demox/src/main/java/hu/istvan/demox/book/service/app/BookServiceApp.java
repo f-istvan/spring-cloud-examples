@@ -1,17 +1,15 @@
-package hu.istvan.zuul.demox;
+package hu.istvan.demox.book.service.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@EnableZuulProxy
 @EnableEurekaClient
 @SpringBootApplication
-public class ZuulProxy {
+public class BookServiceApp {
 
 	public static void main(final String[] args) {
-		SpringApplication.run(ZuulProxy.class, args);
+		SpringApplication.run(BookServiceApp.class, args);
 	}
 
 }
