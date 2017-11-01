@@ -7,7 +7,7 @@ Netflix Eureka and Zuul example with two services calling each other.
 * Spring Cloud Netflix Eureka
 * Spring Cloud Netflix Zuul
 * Spring Boot
-* Spring RestTemplate (user-service calls book-service using zuul with RestTemplate) 
+* Spring RestTemplate (user-service calls book-service using zuul with RestTemplate)
 
 
 #### To start this example run
@@ -38,10 +38,10 @@ $ mvn spring-boot:run
 * http://localhost:9099/book
 
 ##### Urls using zuul API gateway:
- 
-* http://192.168.1.27:9090/book-service/book
-* http://192.168.1.27:9090/user-service/user
+
+* http://localhost:9090/book-service/book
+* http://localhost:9090/user-service/user
 
 
-* http://192.168.1.27:9090/user-service-eureka-instance-name/user
-* http://192.168.1.27:9090/book-service-eureka-instance-name/book
+* http://localhost:9090/user-service-eureka-instance-name/user
+* http://localhost:9090/book-service-eureka-instance-name/book
